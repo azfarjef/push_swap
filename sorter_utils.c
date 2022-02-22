@@ -6,7 +6,7 @@
 /*   By: mahmad-j <mahmad-j@student.42kl.edu.my>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/21 14:43:48 by mahmad-j          #+#    #+#             */
-/*   Updated: 2022/02/21 21:53:09 by mahmad-j         ###   ########.fr       */
+/*   Updated: 2022/02/22 13:11:28 by mahmad-j         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -37,6 +37,13 @@ int	step_to_top(t_list *l, int tag)
 	if (i > size / 2)
 		i -= size;
 	return (i);
+}
+
+int	step_to_tag(int tag, int size)
+{
+	if (tag >= size / 2)
+		tag -= size;
+	return (tag);
 }
 
 t_list	*closest_in_group(t_list *l, int group, int groupsize)

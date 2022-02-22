@@ -2,3 +2,4 @@
 AdrianWR/
 ttranche/
 *.o
+.gitignore

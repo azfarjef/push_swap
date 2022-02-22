@@ -6,7 +6,7 @@
 /*   By: mahmad-j <mahmad-j@student.42kl.edu.my>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/08 08:41:57 by mahmad-j          #+#    #+#             */
-/*   Updated: 2022/02/21 21:12:22 by mahmad-j         ###   ########.fr       */
+/*   Updated: 2022/02/22 13:52:13 by mahmad-j         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,4 +29,11 @@ int	ft_max(int a, int b)
 	if (a > b)
 		return (a);
 	return (b);
+}
+
+int	ft_min(int a, int b)
+{
+	if (a > b)
+		return (b);
+	return (a);
 }

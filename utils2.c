@@ -6,7 +6,7 @@
 /*   By: mahmad-j <mahmad-j@student.42kl.edu.my>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/16 14:50:14 by mahmad-j          #+#    #+#             */
-/*   Updated: 2022/02/21 15:36:55 by mahmad-j         ###   ########.fr       */
+/*   Updated: 2022/02/22 13:23:24 by mahmad-j         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -58,4 +58,13 @@ void	ft_putstr(char *str)
 		i++;
 	write(1, str, i);
 	write(1, "\n", 1);
+}
+
+t_list	*get_last(t_list *l)
+{
+	if (l == NULL)
+		return (NULL);
+	while (l->next)
+		l = l->next;
+	return (l);
 }

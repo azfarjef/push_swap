@@ -6,7 +6,7 @@
 /*   By: mahmad-j <mahmad-j@student.42kl.edu.my>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/01/18 00:04:10 by mahmad-j          #+#    #+#             */
-/*   Updated: 2022/02/21 22:56:23 by mahmad-j         ###   ########.fr       */
+/*   Updated: 2022/02/22 14:04:38 by mahmad-j         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -67,6 +67,7 @@ void	solve(t_mem *m, int group);
 int		biggest_loop(t_list *start, int set);
 int		loop_list(t_list *list, t_list *start, int set);
 int		ft_max(int a, int b);
+int		ft_min(int a, int b);
 t_list	*closest_in_group(t_list *l, int group, int groupsize);
 int		can_swap(t_list *l);
 void	swap_a(t_mem *mem);
@@ -77,5 +78,12 @@ void	double_rotate(t_mem *mem, int *rota, int *rotb);
 void	rev_rotate_b_a(t_mem *mem);
 void	rotate_b(t_mem *mem);
 void	rev_rotate_b(t_mem *mem);
+void	fill_b(t_mem *m);
+void	b_rotation(t_mem *m, int max_step, int *rota, int *rotb);
+int		step_to_tag(int tag, int size);
+t_list	*get_last(t_list *l);
+void	push_a(t_mem *mem);
+void	swap_b(t_mem *mem);
+void	swap_b_a(t_mem *mem);
 
 #endif
