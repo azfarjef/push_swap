@@ -6,7 +6,7 @@
 /*   By: mahmad-j <mahmad-j@student.42kl.edu.my>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/01/18 00:01:40 by mahmad-j          #+#    #+#             */
-/*   Updated: 2022/02/22 14:31:14 by mahmad-j         ###   ########.fr       */
+/*   Updated: 2022/02/22 18:15:23 by mahmad-j         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,7 +22,7 @@ int	main(int ac, char **av)
 	mem.print = 1;
 	if (ac < 2)
 		return (0);
-	parse_arg(ac, av, &mem);
+	parse_arg(ac, av, &mem, 0);
 	if (!is_ordered(&mem))
 	{
 		tagged = (mem.a);

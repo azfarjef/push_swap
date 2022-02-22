@@ -6,7 +6,7 @@
 /*   By: mahmad-j <mahmad-j@student.42kl.edu.my>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/16 14:50:14 by mahmad-j          #+#    #+#             */
-/*   Updated: 2022/02/22 14:30:01 by mahmad-j         ###   ########.fr       */
+/*   Updated: 2022/02/22 16:40:59 by mahmad-j         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,6 +27,8 @@ int	ft_atoi(char *str, t_mem *mem)
 			flag *= -1;
 		++str;
 	}
+	if (!ft_isdigit(*str))
+		exit_error(mem);
 	--str;
 	while (++str && ft_isdigit(*str))
 	{

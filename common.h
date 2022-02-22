@@ -6,7 +6,7 @@
 /*   By: mahmad-j <mahmad-j@student.42kl.edu.my>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/01/18 00:04:10 by mahmad-j          #+#    #+#             */
-/*   Updated: 2022/02/22 14:43:21 by mahmad-j         ###   ########.fr       */
+/*   Updated: 2022/02/22 18:16:42 by mahmad-j         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,7 @@
 
 typedef struct s_list
 {
-	int				value;
+	long			value;
 	int				index;
 	int				keep;
 	struct s_list	*next;
@@ -42,6 +42,7 @@ typedef struct s_mem
 	Utils
 */
 int		ft_isdigit(int c);
+int		ft_isn(int a);
 int		ft_atoi(char *str, t_mem *mem);
 int		ft_abs(int a);
 int		ft_max(int a, int b);
@@ -60,7 +61,7 @@ t_list	*get_last(t_list *l);
 /*
 	Prepare
 */
-void	parse_arg(int ac, char **av, t_mem *mem);
+void	parse_arg(int ac, char **av, t_mem *mem, int f);
 void	prep_five(t_mem *mem);
 int		has_tag(t_list *list, int tag);
 int		list_size(t_list *l);

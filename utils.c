@@ -6,7 +6,7 @@
 /*   By: mahmad-j <mahmad-j@student.42kl.edu.my>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/08 08:41:57 by mahmad-j          #+#    #+#             */
-/*   Updated: 2022/02/22 14:26:55 by mahmad-j         ###   ########.fr       */
+/*   Updated: 2022/02/22 17:14:52 by mahmad-j         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,6 +15,11 @@
 int	ft_isdigit(int a)
 {
 	return (a >= '0' && a <= '9');
+}
+
+int	ft_isn(int a)
+{
+	return (a != '+' && a != '-' && a != ' ' && !ft_isdigit(a));
 }
 
 int	ft_abs(int a)
