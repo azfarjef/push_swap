@@ -6,7 +6,7 @@
 /*   By: mahmad-j <mahmad-j@student.42kl.edu.my>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/21 16:13:10 by mahmad-j          #+#    #+#             */
-/*   Updated: 2022/02/22 14:01:31 by mahmad-j         ###   ########.fr       */
+/*   Updated: 2022/02/22 14:26:45 by mahmad-j         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -44,9 +44,9 @@ int	insert_step(t_list *l, int n, int size)
 void	b_rotation(t_mem *m, int max_step, int *rota, int *rotb)
 {
 	int	total_step;
-	int insert;
-	int b_step;
-	int i;
+	int	insert;
+	int	b_step;
+	int	i;
 
 	i = 0;
 	m->tmp = m->b;
@@ -90,7 +90,7 @@ int	can_swap(t_list *l)
 	t_list	b;
 	int		ori;
 	int		swap;
-	
+
 	a.next = &b;
 	a.index = l->next->index;
 	b.next = l->next->next;
@@ -104,7 +104,7 @@ int	can_swap(t_list *l)
 
 void	solve(t_mem *m, int group)
 {
-	int step;
+	int	step;
 
 	init_solve(m);
 	while (m->size >= m->big && group <= (m->groupnum + 1))

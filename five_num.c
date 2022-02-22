@@ -6,7 +6,7 @@
 /*   By: mahmad-j <mahmad-j@student.42kl.edu.my>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/18 16:54:22 by mahmad-j          #+#    #+#             */
-/*   Updated: 2022/02/21 16:12:14 by mahmad-j         ###   ########.fr       */
+/*   Updated: 2022/02/22 14:24:22 by mahmad-j         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,10 +25,10 @@ int	has_tag(t_list *list, int tag)
 
 void	prep_five(t_mem *mem)
 {
-	t_list *l;
+	t_list	*l;
 	int		min;
 	int		now;
-	
+
 	while (has_tag(mem->a, 0) || has_tag(mem->a, mem->max - 1))
 	{
 		l = mem->a;
@@ -43,7 +43,7 @@ void	prep_five(t_mem *mem)
 			}
 			l = l->next;
 		}
-		if (min = 0)
+		if (min == 0)
 			push_b(mem);
 		if (min < 0)
 			rev_rotate_a(mem);

@@ -6,7 +6,7 @@
 /*   By: mahmad-j <mahmad-j@student.42kl.edu.my>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/16 16:04:42 by mahmad-j          #+#    #+#             */
-/*   Updated: 2022/02/21 22:22:49 by mahmad-j         ###   ########.fr       */
+/*   Updated: 2022/02/22 14:29:14 by mahmad-j         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -54,9 +54,9 @@ void	swap_top(t_list **mem)
 
 void	push_top_x_to_y(t_list **x, t_list **y)
 {
-	t_list *top;
+	t_list	*top;
 
-	if(!*x)
+	if (!*x)
 		return ;
 	top = *x;
 	*x = top->next;
@@ -81,6 +81,8 @@ void	last_to_first(t_list **x)
 		last = last->next;
 	}
 	last->next = (*x);
+	*x = last;
+	prev->next = NULL;
 }
 
 void	first_to_last(t_list **x)

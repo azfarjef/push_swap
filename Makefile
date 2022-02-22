@@ -6,12 +6,12 @@
 #    By: mahmad-j <mahmad-j@student.42kl.edu.my>    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/02/17 18:04:16 by mahmad-j          #+#    #+#              #
-#    Updated: 2022/02/21 21:10:10 by mahmad-j         ###   ########.fr        #
+#    Updated: 2022/02/22 14:06:30 by mahmad-j         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 SRC		=	*.c
-OBJ		=	${SRC:c=o}
+OBJ		=	${SRC:.c=.o}
 INCLUDE	=	./
 
 NAME	=	push_swap

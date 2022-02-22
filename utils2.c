@@ -6,7 +6,7 @@
 /*   By: mahmad-j <mahmad-j@student.42kl.edu.my>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/16 14:50:14 by mahmad-j          #+#    #+#             */
-/*   Updated: 2022/02/22 13:23:24 by mahmad-j         ###   ########.fr       */
+/*   Updated: 2022/02/22 14:30:01 by mahmad-j         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -39,8 +39,8 @@ int	ft_atoi(char *str, t_mem *mem)
 
 int	list_size(t_list *l)
 {
-	int i;
-	
+	int	i;
+
 	i = 0;
 	while (l)
 	{
@@ -54,6 +54,7 @@ void	ft_putstr(char *str)
 {
 	int	i;
 
+	i = 0;
 	while (str[i])
 		i++;
 	write(1, str, i);

@@ -6,7 +6,7 @@
 /*   By: mahmad-j <mahmad-j@student.42kl.edu.my>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/08 08:54:06 by mahmad-j          #+#    #+#             */
-/*   Updated: 2022/02/17 21:39:55 by mahmad-j         ###   ########.fr       */
+/*   Updated: 2022/02/22 14:25:49 by mahmad-j         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,7 @@ void	ft_freelst(t_list **list)
 {
 	t_list	*l;
 	t_list	*next;
-	
+
 	l = *list;
 	while (l)
 	{
